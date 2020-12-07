@@ -41,7 +41,7 @@ vendor:
 	go mod vendor
 
 engine:
-	go build -o engine app/main.go
+	go build -o engine bin/main.go
 
 # check swagger
 check-swagger:

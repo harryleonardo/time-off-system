@@ -11,3 +11,4 @@ PORT: "3022"
 
 # database local = root:@tcp(localhost:3306)/time-off-dev?charset=utf8&parseTime=true&loc=Local
 # database dev: "mysql://bf06dfa1a8a1d7:9375f104@us-cdbr-east-02.cleardb.com/heroku_cd0435688c2b32d?reconnect=true"
+# migrating db => heroku addons:create cleardb:ignite --fork=mysql://root:@tcp(localhost:3306)/time-off-dev
