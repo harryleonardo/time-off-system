@@ -1,0 +1,11 @@
+vendor/
+
+*.test
+.DS_Store
+*.swo
+*.swp
+
+.vscode
+./main
+
+/.idea

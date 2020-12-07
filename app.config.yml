@@ -1,0 +1,10 @@
+# ----------------------- DATABASE CONFIGURATION
+DB_USERNAME: "root"
+DB_PASSWORD: ""
+DB_HOST: "localhost:3306"
+DB_NAME: "time-off-dev"
+DB_MAX_CONNECTION: "32"
+DB_MIN_CONNECTION: "4"
+
+# ----------------------- ECHO CONFIGURATION
+PORT: "3022"
