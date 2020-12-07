@@ -31,6 +31,13 @@ type (
 
 func (d *database) OpenMysqlConn() (*gorm.DB, error) {
 	fmt.Println("Start open mysql connection...")
+
+	logger.Info("DATABASE: ", fmt.Sprintf("%s:%s@tcp(%s)/%s?charset=utf8&parseTime=true&loc=Local",
+		d.SharedConfig.GetDatabaseUserName(),
+		d.SharedConfig.GetDatabasePassword(),
+		d.SharedConfig.GetDatabaseHost(),
+		d.SharedConfig.GetDatabaseName()))
+
 	db, err := gorm.Open("mysql", fmt.Sprintf("%s:%s@tcp(%s)/%s?charset=utf8&parseTime=true&loc=Local",
 		d.SharedConfig.GetDatabaseUserName(),
 		d.SharedConfig.GetDatabasePassword(),
